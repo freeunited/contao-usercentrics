@@ -20,7 +20,10 @@ use PageModel;
  */
 class ModifyFrontendPageListener
 {
-    public const UC_SCRIPT = '<script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="%s" ></script>';
+    /** v1 uc cmp script
+     *  public const UC_SCRIPT = '<script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="%s" ></script>';
+    */
+    public const UC_SCRIPT = '<script id="usercentrics-cmp" async data-eu-mode="true" data-settings-id="%s" src="https://app.eu.usercentrics.eu/browser-ui/latest/loader.js"></script>';
     public const UC_PRIVACY_PROXY = '<meta data-privacy-proxy-server="https://privacy-proxy-server.usercentrics.eu">';
     public const UC_PROTECTOR = '<script type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script>';
 
